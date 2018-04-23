@@ -1,6 +1,8 @@
 # Scorum tests
 Python behave tests for Scorum JSON RPC
 
+[![build status](https://circleci.com/gh/KorolevskyMax/scorum-tests.svg?style=shield&circle-token=5bbec092398d9c73a76d7861e019fda4989c4ebd)](https://circleci.com/gh/KorolevskyMax/scorum-tests.svg?style=shield&circle-token=5bbec092398d9c73a76d7861e019fda4989c4ebd)
+
 Blockchain is a continuously growing list of records, called blocks, which are linked.
 Scorum blockchain generate new block every 3 second. With provided API you could get block information.
 
