@@ -1,4 +1,4 @@
-test_scheduling:
+tests:
   build:
     dockerfile: Dockerfile
   cached: true
