@@ -2,11 +2,11 @@
 Python behave tests for Scorum JSON RPC
 
 
-
-##Tests CI status
+### Tests CI status
 [![build status](https://circleci.com/gh/KorolevskyMax/scorum-tests.svg?style=shield&circle-token=5bbec092398d9c73a76d7861e019fda4989c4ebd)](https://circleci.com/gh/KorolevskyMax/scorum-tests.svg?style=shield&circle-token=5bbec092398d9c73a76d7861e019fda4989c4ebd)
 
-#Howto start tests:
+
+### Howto start tests
 ```
 To start tests you should execute:
     pip install -r "requirements.txt
@@ -16,8 +16,9 @@ or execute:
     docker-compose build
     docker-compose up
 ```
-#Task description:
 
+
+### Task description
 Blockchain is a continuously growing list of records, called blocks, which are linked.
 Scorum blockchain generate new block every 3 second. With provided API you could get block information.
 
@@ -75,7 +76,7 @@ curl --data-binary '{"method": "call", "id": 0, "params": ["database_api", "get_
 }
 ```
 
-# Task
+#### Task
 You have group of nodes ["node1.scorum.com", "node2.scorum.com", "node3.scorum.com"] which are synced by p2p protocol. This nodes have same API described above. 
 You need create test or group of tests which should check blocks production, using python.
 Please send your solution as python file. Or as a link to GitHub repo.
