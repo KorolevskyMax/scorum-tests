@@ -1,0 +1,62 @@
+{
+  "$id": "https://rpc.scorum.com/get_block.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "result": {
+      "$id": "/properties/result",
+      "type": "object",
+      "properties": {
+        "previous": {
+          "$id": "/properties/result/properties/previous",
+          "type": "string"
+        },
+        "timestamp": {
+          "$id": "/properties/result/properties/timestamp",
+          "type": "string"
+        },
+        "witness": {
+          "$id": "/properties/result/properties/witness",
+          "type": "string"
+        },
+        "transaction_merkle_root": {
+          "$id": "/properties/result/properties/transaction_merkle_root",
+          "type": "string"
+        },
+        "extensions": {
+          "$id": "/properties/result/properties/extensions",
+          "type": "array",
+          "items": {
+            "$id": "/properties/result/properties/extensions/items",
+            "type": "array",
+            "items": {
+              "$id": "/properties/result/properties/extensions/items/items",
+              "type": "integer"
+            }
+          }
+        },
+        "witness_signature": {
+          "$id": "/properties/result/properties/witness_signature",
+          "type": "string"
+        },
+        "transactions": {
+          "$id": "/properties/result/properties/transactions",
+          "type": "array"
+        },
+        "block_id": {
+          "$id": "/properties/result/properties/block_id",
+          "type": "string"
+        },
+        "signing_key": {
+          "$id": "/properties/result/properties/signing_key",
+          "type": "string"
+        },
+        "transaction_ids": {
+          "$id": "/properties/result/properties/transaction_ids",
+          "type": "array"
+        }
+      }
+    }
+  }
+}

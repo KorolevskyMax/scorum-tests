@@ -1,0 +1,113 @@
+{
+  "$id": "https://rpc.scorum.com/get_block.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "result": {
+      "$id": "/properties/result",
+      "type": "object",
+      "properties": {
+        "previous": {
+          "$id": "/properties/result/properties/previous",
+          "type": "string",
+          "title": "The Previous Schema ",
+          "default": "",
+          "examples": [
+            "0000000000000000000000000000000000000000"
+          ]
+        },
+        "timestamp": {
+          "$id": "/properties/result/properties/timestamp",
+          "type": "string",
+          "title": "The Timestamp Schema ",
+          "default": "",
+          "examples": [
+            "2018-01-30T12:23:36"
+          ]
+        },
+        "witness": {
+          "$id": "/properties/result/properties/witness",
+          "type": "string",
+          "title": "The Witness Schema ",
+          "default": "",
+          "examples": [
+            "initdelegate"
+          ]
+        },
+        "transaction_merkle_root": {
+          "$id": "/properties/result/properties/transaction_merkle_root",
+          "type": "string",
+          "title": "The Transaction_merkle_root Schema ",
+          "default": "",
+          "examples": [
+            "0000000000000000000000000000000000000000"
+          ]
+        },
+        "extensions": {
+          "$id": "/properties/result/properties/extensions",
+          "type": "array",
+          "items": {
+            "$id": "/properties/result/properties/extensions/items",
+            "type": "array",
+            "items": [
+              {
+                "$id": "/properties/result/properties/extensions/items/items",
+                "type": "integer",
+                "title": "The 0th Schema ",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              {
+                "$id": "/properties/result/properties/extensions/items/items",
+                "type": "string",
+                "title": "The 1st Schema ",
+                "default": "0",
+                "examples": [
+                  "0.0.1"
+                ]
+              }
+            ]
+          }
+        },
+        "witness_signature": {
+          "$id": "/properties/result/properties/witness_signature",
+          "type": "string",
+          "title": "The Witness_signature Schema ",
+          "default": "",
+          "examples": [
+            "1f0989b0d65cbe940b0e67af8e975483d452003de8c52c62a77ab6ead638dc209c47d20baa2b5f736b3a146801b544de525c48fcee3b45cb7d9b52a24c6d268c9f"
+          ]
+        },
+        "transactions": {
+          "$id": "/properties/result/properties/transactions",
+          "type": "array"
+        },
+        "block_id": {
+          "$id": "/properties/result/properties/block_id",
+          "type": "string",
+          "title": "The Block_id Schema ",
+          "default": "",
+          "examples": [
+            "0000000152b87d7f7e7a58385eadfec018e3a647"
+          ]
+        },
+        "signing_key": {
+          "$id": "/properties/result/properties/signing_key",
+          "type": "string",
+          "title": "The Signing_key Schema ",
+          "default": "",
+          "examples": [
+            "SCR6CQwBYjQLYJnmw5HG8Z2cDoQQzf9MQrEu6X67XszkXXN3foZap"
+          ]
+        },
+        "transaction_ids": {
+          "$id": "/properties/result/properties/transaction_ids",
+          "type": "array"
+        }
+      }
+    }
+  }
+}
